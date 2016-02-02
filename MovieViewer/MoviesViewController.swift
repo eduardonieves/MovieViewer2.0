@@ -37,54 +37,7 @@ class MoviesViewController: UIViewController,UITableViewDataSource, UITableViewD
       
             }
     
-    @IBAction func nowPlayingButton(sender: AnyObject) {
-        
-        nowPlaying = true
-        topRated = false
-        upcoming = false
-        popular = false
-        endpoint = "now_playing"
-        seconds = 0
-        viewDidLoad()
-        self.navigationItem.title = "Now Playing";
-        
-        print(endpoint)
-    }
-    @IBAction func topRatedButton(sender: AnyObject) {
-        nowPlaying = false
-        topRated = true
-        upcoming = false
-        popular = false
-        endpoint = "top_rated"
-        seconds = 0
-        self.navigationItem.title = "Top Rated";
-        viewDidLoad()
-        print(endpoint)
-        
-    }
-    @IBAction func upcomingButton(sender: AnyObject) {
-        nowPlaying = false
-        topRated = false
-        upcoming = true
-        popular = false
-        endpoint = "upcoming"
-        seconds = 0
-        self.navigationItem.title = "Upcoming";
-        viewDidLoad()
-        print(endpoint)
-    }
-    @IBAction func popularButton(sender: AnyObject) {
-        nowPlaying = false
-        topRated = false
-        upcoming = false
-        popular = true
-        endpoint = "popular"
-        seconds = 0
-        self.navigationItem.title = "Popular";
-        viewDidLoad()
-        print(endpoint)
-    }
-    override func viewDidLoad() {
+       override func viewDidLoad() {
         super.viewDidLoad()
         
         

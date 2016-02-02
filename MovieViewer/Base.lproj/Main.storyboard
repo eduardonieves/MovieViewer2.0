@@ -8,7 +8,7 @@
         <!--Navigation Controller-->
         <scene sceneID="wcp-mY-BA1">
             <objects>
-                <navigationController id="alx-hI-mQI" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MoviesNavigationController" id="alx-hI-mQI" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qKM-7t-2Hd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -48,41 +48,6 @@
                                 </searchBar>
                             </subviews>
                         </scrollView>
-                        <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="gLX-fb-Xp3">
-                            <rect key="frame" x="0.0" y="248" width="320" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                            <color key="backgroundColor" red="0.15261474480000001" green="0.21724395460000001" blue="0.40037089650000002" alpha="1" colorSpace="calibratedRGB"/>
-                            <items>
-                                <barButtonItem image="nowplaying" id="aVq-2U-Y2V">
-                                    <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-4"/>
-                                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <connections>
-                                        <action selector="nowPlayingButton:" destination="BYZ-38-t0r" id="ZwZ-mO-sJh"/>
-                                    </connections>
-                                </barButtonItem>
-                                <barButtonItem image="star" id="gTI-m0-JO5">
-                                    <color key="tintColor" red="1" green="0.94949085796167387" blue="0.036004927028067457" alpha="1" colorSpace="calibratedRGB"/>
-                                    <connections>
-                                        <action selector="topRatedButton:" destination="BYZ-38-t0r" id="XgA-rv-i4J"/>
-                                    </connections>
-                                </barButtonItem>
-                                <barButtonItem image="upcoming" id="ghc-bN-MJd">
-                                    <inset key="imageInsets" minX="0.0" minY="-2" maxX="0.0" maxY="-14"/>
-                                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <connections>
-                                        <action selector="upcomingButton:" destination="BYZ-38-t0r" id="Gvv-KU-B6i"/>
-                                    </connections>
-                                </barButtonItem>
-                                <barButtonItem image="popular" id="nef-RK-Add">
-                                    <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-8"/>
-                                    <color key="tintColor" red="1" green="0.46474460399329232" blue="0.086333498093602246" alpha="1" colorSpace="calibratedRGB"/>
-                                    <connections>
-                                        <action selector="popularButton:" destination="BYZ-38-t0r" id="cht-bR-AbF"/>
-                                    </connections>
-                                </barButtonItem>
-                            </items>
-                            <color key="barTintColor" red="0.15261474480000001" green="0.21724395460000001" blue="0.40037089650000002" alpha="1" colorSpace="calibratedRGB"/>
-                        </toolbar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="112" id="sTL-UN-N1V" customClass="MovieCell" customModule="MovieViewer" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="136" width="320" height="112"/>
@@ -202,38 +167,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Q0g-gw-Xf1">
-                                <rect key="frame" x="0.0" y="63" width="320" height="505"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="izY-ks-Etr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QMi-0n-yos">
-                                <rect key="frame" x="0.0" y="361" width="320" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.15261474480000001" green="0.21724395460000001" blue="0.40037089650000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view alpha="0.84999999999999998" contentMode="scaleToFill" id="nha-Cv-yrP">
-                                <rect key="frame" x="0.0" y="396" width="320" height="172"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.15261474480000001" green="0.21724395460000001" blue="0.40037089650000002" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8VR-Zv-eGP">
-                                <rect key="frame" x="0.0" y="396" width="320" height="172"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="0.0" height="0.0"/>
-                            </label>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Q0g-gw-Xf1">
+                                        <rect key="frame" x="0.0" y="-71" width="320" height="639"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view alpha="0.84999999999999998" contentMode="scaleToFill" id="nha-Cv-yrP">
+                                        <rect key="frame" x="0.0" y="568" width="320" height="172"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QMi-0n-yos">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.15261474480000001" green="0.21724395460000001" blue="0.40037089650000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8VR-Zv-eGP">
+                                                <rect key="frame" x="2" y="75" width="317" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7H4-sV-VEu">
+                                                <rect key="frame" x="2" y="33" width="107" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xB7-XM-6mO">
+                                                <rect key="frame" x="39" y="55" width="92" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stats" id="ylE-kK-LSe">
+                                                <rect key="frame" x="0.0" y="55" width="33" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.15261474480000001" green="0.21724395460000001" blue="0.40037089650000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="tGy-fs-Vh0"/>
                     <connections>
+                        <outlet property="infoView" destination="nha-Cv-yrP" id="qoN-kC-FNe"/>
                         <outlet property="overviewLabel" destination="8VR-Zv-eGP" id="731-5a-OYN"/>
                         <outlet property="posterImageView" destination="Q0g-gw-Xf1" id="Y4J-jn-1WX"/>
+                        <outlet property="ratingLabel" destination="xB7-XM-6mO" id="Mjf-Lb-nMb"/>
+                        <outlet property="realeaseLabel" destination="7H4-sV-VEu" id="ZkD-Ca-7fa"/>
+                        <outlet property="scrollView" destination="izY-ks-Etr" id="svD-qa-w7I"/>
                         <outlet property="titleLabel" destination="QMi-0n-yos" id="qIM-62-FjM"/>
                     </connections>
                 </viewController>
@@ -244,10 +239,7 @@
     </scenes>
     <resources>
         <image name="grid" width="40" height="40"/>
-        <image name="nowplaying" width="50" height="50"/>
-        <image name="popular" width="60" height="60"/>
-        <image name="star" width="50" height="50"/>
-        <image name="upcoming" width="50" height="50"/>
+        <image name="stats" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="c4i-ii-Vl3"/>

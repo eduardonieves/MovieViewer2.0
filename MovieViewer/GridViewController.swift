@@ -14,9 +14,6 @@ class GridViewController: UIViewController,UICollectionViewDataSource,UICollecti
 
     @IBOutlet var collectionView: UICollectionView!
     
-  
-   
-    
     var movies: [NSDictionary]?
     var refreshControl: UIRefreshControl!
     var timer = NSTimer()
@@ -32,7 +29,7 @@ class GridViewController: UIViewController,UICollectionViewDataSource,UICollecti
 
         collectionView.dataSource = self
         collectionView.delegate = self
-        
+        print(endpoint)
         
         if endpoint == "now_playing"{
             self.navigationItem.title = "Now Playing";

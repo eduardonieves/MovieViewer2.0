@@ -22,26 +22,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let nowPlayingNavigationController = storyBoard.instantiateViewControllerWithIdentifier("MoviesNavigationController") as! UINavigationController
         let nowPlayingViewController = nowPlayingNavigationController.topViewController as! MoviesViewController
         nowPlayingViewController.endpoint = "now_playing"
+        nowPlayingViewController.navigationItem.title = "Now Playing"
         nowPlayingNavigationController.tabBarItem.title = "Now Playing"
         nowPlayingNavigationController.tabBarItem.image = UIImage(named: "nowplaying")
         
         let topRatedNavigationController = storyBoard.instantiateViewControllerWithIdentifier("MoviesNavigationController") as! UINavigationController
         let topRatedViewController = topRatedNavigationController.topViewController as! MoviesViewController
         topRatedViewController.endpoint = "top_rated"
+        topRatedViewController.navigationItem.title = "Top Rated"
         topRatedNavigationController.tabBarItem.title = "Top Rated"
         topRatedNavigationController.tabBarItem.image = UIImage(named: "star")
         
         let upcomingNavigationController = storyBoard.instantiateViewControllerWithIdentifier("MoviesNavigationController") as! UINavigationController
         let upcomingViewController = upcomingNavigationController.topViewController as! MoviesViewController
         upcomingViewController.endpoint = "upcoming"
+        upcomingViewController.navigationItem.title = "Upcoming"
         upcomingNavigationController.tabBarItem.title = "Upcoming"
         upcomingNavigationController.tabBarItem.image = UIImage(named: "upcoming")
         
         let popularNavigationController = storyBoard.instantiateViewControllerWithIdentifier("MoviesNavigationController") as! UINavigationController
         let popularViewController = popularNavigationController.topViewController as! MoviesViewController
         popularViewController.endpoint = "popular"
+        popularViewController.title = "Popular"
         popularNavigationController.tabBarItem.title = "Popular"
         popularNavigationController.tabBarItem.image = UIImage(named: "popular")
+        
+        
         
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [nowPlayingNavigationController,topRatedNavigationController,upcomingNavigationController,popularNavigationController]

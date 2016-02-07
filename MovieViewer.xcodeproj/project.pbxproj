@@ -10,6 +10,7 @@
 		A05096F71C56C36000470456 /* MoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05096F61C56C36000470456 /* MoviesCollectionViewCell.swift */; };
 		A05096F91C56DDEE00470456 /* SingleMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05096F81C56DDEE00470456 /* SingleMovieViewController.swift */; };
 		A0B8384B1C5935390038D44E /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B8384A1C5935390038D44E /* GridViewController.swift */; };
+		A0DEEC861C60DA4E00A5358E /* TrailersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DEEC851C60DA4E00A5358E /* TrailersViewController.swift */; };
 		CF6921AE724BEE700F3A1F80 /* Pods_MovieViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A80D5246264F59360BF661E /* Pods_MovieViewer.framework */; };
 		D42D894A1C498FAC0005E22E /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D89491C498FAC0005E22E /* Reachability.swift */; };
 		D45937C71C40157200CA8431 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45937C61C40157200CA8431 /* AppDelegate.swift */; };
@@ -25,6 +26,7 @@
 		A05096F61C56C36000470456 /* MoviesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesCollectionViewCell.swift; sourceTree = "<group>"; };
 		A05096F81C56DDEE00470456 /* SingleMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleMovieViewController.swift; sourceTree = "<group>"; };
 		A0B8384A1C5935390038D44E /* GridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		A0DEEC851C60DA4E00A5358E /* TrailersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrailersViewController.swift; sourceTree = "<group>"; };
 		A8861E830364C0341FAE19ED /* Pods-MovieViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieViewer/Pods-MovieViewer.release.xcconfig"; sourceTree = "<group>"; };
 		D42D89491C498FAC0005E22E /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = "../../../Downloads/Reachability.swift-master/Reachability/Reachability.swift"; sourceTree = "<group>"; };
 		D45937C31C40157200CA8431 /* MovieViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +114,7 @@
 				D45937D81C40165100CA8431 /* MoviesViewController.swift */,
 				A05096F81C56DDEE00470456 /* SingleMovieViewController.swift */,
 				A0B8384A1C5935390038D44E /* GridViewController.swift */,
+				A0DEEC851C60DA4E00A5358E /* TrailersViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				D45937DC1C40262F00CA8431 /* MovieCell.swift in Sources */,
 				D45937DE1C405FE800CA8431 /* MoviesViewController.swift in Sources */,
 				A0B8384B1C5935390038D44E /* GridViewController.swift in Sources */,
+				A0DEEC861C60DA4E00A5358E /* TrailersViewController.swift in Sources */,
 				D42D894A1C498FAC0005E22E /* Reachability.swift in Sources */,
 				A05096F71C56C36000470456 /* MoviesCollectionViewCell.swift in Sources */,
 				A05096F91C56DDEE00470456 /* SingleMovieViewController.swift in Sources */,

@@ -23,10 +23,6 @@ class MoviesViewController: UIViewController,UITableViewDataSource, UITableViewD
     var refreshControl: UIRefreshControl!
     var timer = NSTimer()
     var seconds = 0
-    var nowPlaying = true
-    var topRated = false
-    var upcoming = false
-    var popular = false
     var filteredMovies:[NSDictionary]!
     var endpoint = "now_playing"
     var search = false
@@ -45,6 +41,8 @@ class MoviesViewController: UIViewController,UITableViewDataSource, UITableViewD
         tableView.delegate = self
         searchBar.delegate = self
         filteredMovies = movies
+        
+        print("endpoint: ",endpoint)
         
         let reachability: Reachability
         do {
@@ -236,26 +234,10 @@ class MoviesViewController: UIViewController,UITableViewDataSource, UITableViewD
 
         }
         else{
-            if nowPlaying == true{
-                endpoint = "now_playing"
                 let gridMovieController = segue.destinationViewController as! GridViewController
                 gridMovieController.endpoint = endpoint
             }
-           else if topRated == true{
-                endpoint = "top_rated"
-                let gridMovieController = segue.destinationViewController as! GridViewController
-                gridMovieController.endpoint = endpoint
-            }
-            else if upcoming == true{
-                endpoint = "upcoming"
-                let gridMovieController = segue.destinationViewController as! GridViewController
-                gridMovieController.endpoint = endpoint
-            }
-            else if popular == true{
-                endpoint = "popular"
-                let gridMovieController = segue.destinationViewController as! GridViewController
-                gridMovieController.endpoint = endpoint
-            }
+        
         }
     }
-}
+

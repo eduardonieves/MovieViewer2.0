@@ -19,8 +19,7 @@ class SingleMovieViewController: UIViewController {
     @IBOutlet weak var realeaseLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
     
-     var movie: NSDictionary!
-    
+     var movie: NSDictionary!    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,8 +39,6 @@ class SingleMovieViewController: UIViewController {
         let rating = movie["popularity"] as! Int
         ratingLabel.text = String(rating)+"%"
         
-        
-        
         let baseUrl = "http://image.tmdb.org/t/p/w500"
         
         if let posterPath = movie["poster_path"] as? String {
@@ -53,14 +50,13 @@ class SingleMovieViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-  
-
-
-
-
-
-
 }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let id = movie!["id"] as! Int
+        
+        let trailerViewController = segue.destinationViewController as! TrailersViewController
+        trailerViewController.id = String(id)
+       
+        
+    }
 }

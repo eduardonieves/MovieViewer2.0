@@ -19,11 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         
+        
         let nowPlayingNavigationController = storyBoard.instantiateViewControllerWithIdentifier("MoviesNavigationController") as! UINavigationController
         let nowPlayingViewController = nowPlayingNavigationController.topViewController as! MoviesViewController
         nowPlayingViewController.endpoint = "now_playing"
         nowPlayingViewController.navigationItem.title = "Now Playing"
         nowPlayingNavigationController.tabBarItem.title = "Now Playing"
+        nowPlayingNavigationController.tabBarController?.view.backgroundColor = UIColor.blueColor()
         nowPlayingNavigationController.tabBarItem.image = UIImage(named: "nowplaying")
         
         let topRatedNavigationController = storyBoard.instantiateViewControllerWithIdentifier("MoviesNavigationController") as! UINavigationController
@@ -47,9 +49,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         popularNavigationController.tabBarItem.title = "Popular"
         popularNavigationController.tabBarItem.image = UIImage(named: "popular")
         
-        
-        
-        let tabBarController = UITabBarController()
+        let tabBarController = storyBoard.instantiateViewControllerWithIdentifier("TabBarController") as! UITabBarController
+        tabBarController.view.tintColor = UIColor.blackColor()
         tabBarController.viewControllers = [nowPlayingNavigationController,topRatedNavigationController,upcomingNavigationController,popularNavigationController]
        
         

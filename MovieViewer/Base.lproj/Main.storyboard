@@ -12,14 +12,15 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qKM-7t-2Hd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.15261474480000001" green="0.21724395460000001" blue="0.40037089650000002" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zfQ-cp-Js7"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jzr-3J-2sv"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HhQ-fA-K9N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1861" y="-242"/>
+            <point key="canvasLocation" x="-1053" y="-242"/>
         </scene>
         <!--Now Playing-->
         <scene sceneID="tne-QT-ifu">
@@ -30,7 +31,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <scrollView key="tableHeaderView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="SaQ-Hn-PGr">
-                            <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚠ Network Error " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gSC-mR-79Q">
@@ -49,8 +50,8 @@
                             </subviews>
                         </scrollView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="112" id="sTL-UN-N1V" customClass="MovieCell" customModule="MovieViewer" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="136" width="320" height="112"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="112" id="sTL-UN-N1V" customClass="MovieCell" customModule="MovieViewer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="320" height="112"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sTL-UN-N1V" id="1bJ-7a-hdW">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="111"/>
@@ -86,6 +87,7 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="4T0-Zu-cuj"/>
                     <navigationItem key="navigationItem" title="Now Playing" id="gUh-XK-CUT">
                         <barButtonItem key="backBarButtonItem" title="List" id="n6B-6Z-qNu"/>
                         <barButtonItem key="rightBarButtonItem" image="grid" id="Kfb-Dy-U0R">
@@ -106,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1448" y="-242"/>
+            <point key="canvasLocation" x="-596" y="-242"/>
         </scene>
         <!--Grid View Controller-->
         <scene sceneID="SZ5-rz-Ktf">
@@ -124,7 +126,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="com.codepath.CollectionCell" id="VNC-ei-ZKg" customClass="MoviesCollectionViewCell" customModule="MovieViewer" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="157" height="157"/>
+                                <rect key="frame" x="0.0" y="0.0" width="157" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="157" height="157"/>
@@ -157,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DlD-G0-zdv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1448" y="455"/>
+            <point key="canvasLocation" x="-596" y="481"/>
         </scene>
         <!--Single Movie View Controller-->
         <scene sceneID="kIX-X3-yob">
@@ -168,11 +170,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" id="izY-ks-Etr">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="560"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Q0g-gw-Xf1">
-                                        <rect key="frame" x="0.0" y="-8" width="320" height="576"/>
+                                        <rect key="frame" x="0.0" y="-8" width="320" height="740"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <view alpha="0.84999999999999998" contentMode="scaleToFill" id="nha-Cv-yrP">
@@ -188,7 +190,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8VR-Zv-eGP">
-                                                <rect key="frame" x="2" y="119" width="320" height="21"/>
+                                                <rect key="frame" x="2" y="108" width="320" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -196,21 +198,25 @@
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7H4-sV-VEu">
-                                                <rect key="frame" x="2" y="77" width="107" height="21"/>
+                                                <rect key="frame" x="215" y="79" width="107" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xB7-XM-6mO">
-                                                <rect key="frame" x="39" y="99" width="92" height="21"/>
+                                                <rect key="frame" x="41" y="80" width="92" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" id="iev-5L-uDs">
+                                                <rect key="frame" x="174" y="79" width="33" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stats" id="ylE-kK-LSe">
-                                                <rect key="frame" x="0.0" y="99" width="33" height="24"/>
+                                                <rect key="frame" x="2" y="80" width="33" height="24"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                         </subviews>
@@ -241,7 +247,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CAl-sP-iow" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-989" y="-242"/>
+            <point key="canvasLocation" x="-109" y="-242"/>
         </scene>
         <!--Trailers View Controller-->
         <scene sceneID="9vt-rW-1oX">
@@ -285,16 +291,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffm-q4-4q2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-615" y="-242"/>
+            <point key="canvasLocation" x="449" y="-242"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="PJw-dE-cBr">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" automaticallyAdjustsScrollViewInsets="NO" id="mwC-Ge-Urk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="l8Y-6a-DVp">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.15261474480000001" green="0.21724395460000001" blue="0.40037089650000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="K3P-rd-wNe"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EW2-ji-qO9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-596" y="-954"/>
         </scene>
     </scenes>
     <resources>
+        <image name="calendar" width="30" height="30"/>
         <image name="grid" width="40" height="40"/>
         <image name="stats" width="30" height="30"/>
         <image name="trailers" width="40" height="40"/>
         <image name="videoerror" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="c4i-ii-Vl3"/>
+        <segue reference="K3P-rd-wNe"/>
+        <segue reference="7SF-RS-c58"/>
     </inferredMetricsTieBreakers>
 </document>

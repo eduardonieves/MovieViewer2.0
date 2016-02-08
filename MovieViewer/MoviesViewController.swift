@@ -36,6 +36,7 @@ class MoviesViewController: UIViewController,UITableViewDataSource, UITableViewD
        override func viewDidLoad() {
         super.viewDidLoad()
         
+                
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -170,8 +171,9 @@ class MoviesViewController: UIViewController,UITableViewDataSource, UITableViewD
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-        let cell = tableView.dequeueReusableCellWithIdentifier("MovieCell", forIndexPath: indexPath) as! MovieCell
-    
+        let cell = tableView.dequeueReusableCellWithIdentifier("MovieCell", forIndexPath: indexPath) as! MovieCell        
+        
+        cell.selectionStyle = .Default
         
         if seconds == 0{
             SwiftSpinner.show("Loading")
@@ -225,12 +227,14 @@ class MoviesViewController: UIViewController,UITableViewDataSource, UITableViewD
         
         if segue.identifier == "singleView"{
             let cell = sender as! UITableViewCell
+                cell.selectionStyle = .None
             let indexPath = tableView.indexPathForCell(cell)
             let movie = filteredMovies![indexPath!.row]
             print (movie)
             
             let singleMovieController = segue.destinationViewController as! SingleMovieViewController
             singleMovieController.movie = movie
+            cell.selectionStyle = .Default
 
         }
         else{

@@ -94,6 +94,8 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
+<img src='http://i.imgur.com/uxIi8yg.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' />
+
 <img src='https://i.imgur.com/OkZ3kLg.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
@@ -101,6 +103,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Adding the trailers for every movie was the most challenging part.
+Sorry for the black flashing screen in the gif(virtual machine bugs)
 
 ## License
 
